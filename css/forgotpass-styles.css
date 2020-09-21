@@ -1,0 +1,181 @@
+*{ box-sizing: border-box; }
+body{ padding: 0; margin: 0; }
+
+.Left-Panel{
+    background-image:url('../images/KuGateLarge.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: #154420;
+	float: left;
+	overflow: hidden;
+}
+
+#FPForm { text-align: center;
+    margin-top: 25%;
+  }
+
+.Right-Panel{ background-color: #fcfcfc; overflow: hidden; }
+
+.overlay{
+    background-color: rgba(21,68,32, 0.8);
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.Outer-Container{
+    position: relative;
+    height: 100%;
+}
+
+.Logo { grid-area: logo; margin: 0; padding: 0; text-align: right; }
+.Text-I { grid-area: text1; text-align: center; padding-top: 15%; margin: 0; }
+.Text-I h1 { margin: 0; padding: 0; line-height: 1; letter-spacing: -0.1vw; color: #fcfcfc; font-weight: normal;}
+.Text-II { grid-area: text3; margin: 0; padding: 0}
+.Text-II p { font-size: 1.4vw; color: #fcfcfc; letter-spacing: 0vw; line-height: 1.1; margin-bottom: 0; margin-left: 8%; margin-top: 2%}
+.Left-Buttons { grid-area: buttons; text-align: center;}
+
+.Left-Buttons button, .Left-Buttons #login{
+    outline-color: #64a462;
+    background-color: #fcfcfc;
+    width: 8vw;
+    margin-right: 2%;
+    border: none;
+    border-radius: 1vh;
+    color: #313131;
+    height: 2.4vw;
+    font-size: 1.3vw;
+    font-family: Lucida Sans Unicode;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#fpNext1, #fpNext2, #resend, #confirm{
+    outline-color: #64a462;
+    background-color: #154420;
+    width: 27.2vw;
+    margin-right: 2%;
+    border: none;
+    border-radius: 1vh;
+    color: #fcfcfc;
+    height: 7vh;
+    font-size: 1.5vw;
+    font-family: Lucida Sans Unicode;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#fpNext1, #fpNext2, #resend, #confirm {width: 30vw; height: 3vw; border: none; margin: 1.5vw 0 3vw 0;}
+#confirm { margin-left: 13vw; width: 25vw; margin-top: 0;}
+#fpNext2 {width: 12vw; margin-right: 0.8vw;} #resend {width: 17vw; }
+
+#ErrorMsg
+{
+    margin: 0; 
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    line-height: 1;
+    padding: 0; 
+    letter-spacing: -0.1vw; 
+    color: red; 
+    font-weight: normal; 
+    font-size: 1.2vw;
+}
+
+.Left-Buttons button:hover{
+    background-color: #154420;
+    color: #fcfcfc;
+}
+
+.line{
+    width: 14vw;
+    border-bottom: 0.2vw solid #fcfcfc;
+    height: 2%;
+    margin: 0;
+    margin-left: 13%;
+    margin-top: 2%;
+}    
+
+
+
+.Grid-Container{
+     height: 50%;
+     display: grid;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     margin: auto;   
+     max-width: 33vw;
+     min-width: 33vw;
+     font-family: Lucida Sans Unicode;
+     font-size: 1vw;            
+}
+
+
+
+.Screen:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .Left-Panel{
+        width: 50%;
+        height: 100vh;
+        float: left;
+    }
+    .Right-Panel{
+        width: 50%;
+        height: 100vh;
+        float: left;
+    }
+
+
+
+#div1 h1, #div2 h1, #div3 h1{ margin-bottom: 1.5vw; font-size: 2.5vw; font-family: Lucida Sans Unicode; font-weight: bold; color: #154420; }
+#div1 p, #div2 p, #div3 p, #div3 label{font-size: 1.2vw; color: #313131; font-family: Lucida Sans Unicode; margin: 0; padding: 0; }
+
+#fpNext1:hover, #fpNext2:hover, #resend:hover, #confirm:hover{ background-color: #2e7a40; }
+
+#email, #code, #pass1, #pass2{
+    width: 24vw;
+    height: 7vh;
+    border: none;
+    background-color: #e1e1e1;
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+    outline-color: #154420;
+    font-family: Lucida Sans Unicode;
+    font-size: 1.2vw;
+    padding: 0 3% 0 3%;
+}
+
+#div4 
+{
+   padding: 0;
+   margin-top: 10%;
+   text-align: center;
+}
+
+#email, #code, #pass1, #pass2 { border-radius: 1vh; width: 30vw; height: 3vw; margin-top: 1.5vw; box-shadow: 0px 0px 0px 0.1vw rgba(0,0,0,0.3); }
+#pass1, #pass2 { width: 25vw; } #pass2 { margin-top: 0.6vw; margin-bottom: 1.5vw;} #pass1 {margin-top: 0; }
+#code { margin-bottom: 0.5vw; }
+
+.Grid-Container {
+      grid-template-areas:
+        'logo text1'
+        'text3 text3'
+        'buttons buttons';
+    }
+    
+    .Login-Container {
+      grid-template-areas:
+        'head'
+        'lbl1'
+        'lbl2'
+        'lbl3'
+        'btn'
+        'lbl4';
+    }

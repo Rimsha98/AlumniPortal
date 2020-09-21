@@ -1,0 +1,214 @@
+.CV-Layout:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body { margin: 0; padding: 0; background-color: #f0f0f0; }
+
+#CVH1
+{
+   margin:0.5vw;
+   margin-bottom: 0;
+   padding: 0;
+    font-family: Lucida Sans Unicode;
+    color: #154420;
+    font-size: 3vw;
+    text-align: center;
+    
+    
+}
+#CVP1
+{
+    margin:0;
+    text-align: center;
+    font-family: Lucida Sans Unicode;
+    color: #313131;
+    font-size: 1.2vw;
+    line-height: 1.2;
+}
+
+.Main-Section{
+	background-color: #fcfcfc;
+	margin: 0 auto 1vh auto;
+	overflow: hidden;
+    width: 67vw;
+	max-width: 67vw;
+    height: auto;
+    box-shadow: 0px 0px 0px 0.1vw rgba(0,0,0,0.3); 
+}
+
+hr.partition 
+{
+    width: 95%;
+    color: #154420; 
+    border-top: 0.15vw solid #154420; 
+    margin-bottom: 0; 
+    margin-top: 0;
+}
+
+.Left-Panel{
+    float: left;
+    width: 188.7px;
+    height: 1050px;
+    background-color: #154420;
+    color: #fcfcfc;
+    font-family: Lucida Sans Unicode; 
+}
+
+.Right-Panel{
+    float: left;
+    width: 525px;
+    height: 1050px;
+    background-color: #fcfcfc;
+    color: #313131;
+    font-family: Lucida Sans Unicode; 
+}
+
+.Name-Section h1,h2, .Contact-Section p, .Skills-Section p, .Lang-Section p{
+    max-width: 188px; 
+    word-wrap: break-word; 
+    line-height: 1.2;
+    text-align: center; 
+    padding: 0px 5px 0px 5px;
+    margin: 0px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; 
+}
+
+.Name-Section h1{
+    font-size: 23px; 
+    margin-top: 10px; 
+}
+
+.Name-Section h2{
+    font-size: 14px; 
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+.heading{
+     background-color: #0b2912; 
+     padding: 8px;
+     margin-top: 10px;
+}
+
+.heading h1{
+     text-align: left; 
+     font-size: 15px; 
+     margin: 0; 
+     font-style: normal; 
+     font-weight: lighter;
+}
+
+.sub-heading{
+    text-align: left; 
+    font-size: 13px; 
+    margin: 0; 
+    margin-top: 5px;
+    font-weight: normal; 
+    padding-left: 8px;
+}
+
+.Contact-Section p,.Skills-Section p, .Lang-Section p{
+    font-size: 12px;
+    padding-left: 8px;
+    text-align: left;
+    margin-top: 8px;
+}
+
+.TopDesc-Section
+{
+    margin: 10px 8px 0px 8px;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 1.2;
+    
+}
+
+.TopDesc-Section p
+{
+    padding: 0;
+    margin: 0;
+}
+
+.Main-heading h1
+{
+    
+    font-family: Lucida Sans Unicode;
+    font-size: 17px;
+    color: #154420;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 5px;
+    padding-left: 15px;
+}
+
+.WorkTitles, #WorkTitles
+{
+    font-size: 13px;
+    font-weight: bold;
+    color: #154420;
+}
+
+.Work-Section table
+{
+    font-size: 12px;
+    margin-left: 13px;
+}
+
+.Work-Section table td
+{
+    max-width: 390px; word-wrap: break-word; line-height: 1.2;
+}
+
+.CellYears, .EducYears
+{
+     max-width: 390px; word-wrap: break-word; line-height: 1.2; 
+}
+
+.EducYears {padding-bottom: 5px; }
+
+.CellParah, .ExpParah
+{
+    padding: 0; margin: 0; font-size: 12px; color: #313131; font-weight: normal; padding-left: 20px; 
+}
+
+.ExpParah { padding-bottom: 8px; }
+
+#CV_Certi, #CV_Exp
+{
+    padding: 0; margin: 0; font-size: 12px; color: #313131; font-weight: normal; padding-left: 15px; margin-top: 5px;
+}
+
+.Main_Titles, .Educ_Title{
+    padding: 0; margin: 0; font-size: 12px; padding-left: 20px;
+     font-size: 13px;
+    font-weight: bold;
+    color: #313131;
+}
+
+.Educ_Title { padding-bottom: 5px; }
+
+
+
+#create_pdf:hover, #edit_cv:hover { background-color: #2e7a40; }
+
+#create_pdf, #edit_cv 
+{
+	margin-top: 1vw;
+	margin-left: 48vw;
+	margin-bottom: 1vw;
+	width: 10vw;
+	height: 2.5vw;
+	background-color: #154420;
+	color: #fcfcfc;
+	font-size: 1vw;
+	font-family: Lucida Sans Unicode;
+	border: none;
+	border-radius: 0.2vw;
+	cursor: pointer;
+	outline-color: #154420;
+}
+
+#edit_cv { width: 7vw; margin-left: 0.3vw;}
